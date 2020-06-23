@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import HDivider from './HDivider';
 import NewsColumns from './NewsColumns';
-// import NewsColumns from './NewsColumnsTest';
 import Biz from './Business';
 import Tech from './Tech';
 import Political from './Politics';
@@ -17,7 +16,6 @@ import {
     Link,
     useParams
   } from "react-router-dom";
-//import NewsColumns from './NewsColumns';
   
 const images = {
     img1: <img size='small' src="//images.wsj.net/im-136716/social" alt=""
@@ -28,7 +26,6 @@ class HomeMenu extends React.Component {
     render() {
         return (
             <Router>
-                {/* <div className='ui container'> */}
                 <div>
                     <div className='ui borderless main menu' style={{"":""}}>
                         <div className='ui text container'>                        
