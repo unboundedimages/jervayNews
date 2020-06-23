@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import HDivider from './HDivider';
-// import NewsColumns from './NewsColumns';
-import NewsColumns from './NewsColumnsTest';
+import NewsColumns from './NewsColumns';
+// import NewsColumns from './NewsColumnsTest';
 import Biz from './Business';
 import Tech from './Tech';
 import Political from './Politics';
@@ -9,6 +9,7 @@ import HBCUS from './HBCU';
 import LAW_S from './Law';
 import HistoryB from './History';
 import APNews from './Ap';
+import AggieNews from './Aggie';
 import {
     BrowserRouter as Router,
     Switch,
@@ -39,7 +40,8 @@ class HomeMenu extends React.Component {
                             <Link to="/Community" className='item'>Community</Link>
                             <Link to="/Law" className='item'>Law</Link>
                             <Link to="/History" className='item'>History</Link>
-                            <Link to="/Ap" className='item'>AP News</Link>
+                            <Link to="/ApNews" className='item'>AP News</Link>
+                            <Link to="/AGIES" className='item'>Agriculture</Link>
                         </div>
                     </div> 
                     <div className="ui container center aligned">
@@ -71,8 +73,11 @@ class HomeMenu extends React.Component {
                         <HistoryB/>
                     </Route>
                     
-                    <Route exact path="/Ap">
+                    <Route exact path="/ApNews">
                         <APNews/>
+                    </Route>
+                    <Route exact path="/AGIES">
+                        <AggieNews/>
                     </Route>
                 </Switch>
             </Router>
